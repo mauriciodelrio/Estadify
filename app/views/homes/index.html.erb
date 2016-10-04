@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<p id="notice"><%= notice %></p>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Estadify</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/application.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/2fd20525fe.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+  </head>
+  <body>
+    <div class="col-md-12 text-center tittle animated fadeIn">
+      <div class="col-md-12 end"></div>
+      <div class="col-md-9">
+        <h1><b>EstadiFy</b></h1>
+        <h4>Aprende Estadística descriptiva utilizando datos entregados por spotify</h4>
+      </div>
+      <div class="col-md-3">
+        <br>
+        <img src="https://d0.awsstatic.com/logos/customers/spotify-logo-primary-horizontal-light-background-rgb.jpg" style="width:60%;"/>
+      </div>
+      <div class="col-md-12 end"></div>
+    </div>
+    <div class="col-md-12 text-center">
+      <div class="col-md-4 text-left animated fadeIn" id="first-one" >
+        <h3><b>Partamos por lo básico</b></h3>
+        <h3><i>¿Qué es la Estadística descritiva?</i></h3>
+        <p>
+          La <b>estadística descriptiva</b> es la técnica matemática que obtiene,
+          organiza, presenta y describe un conjunto de datos con el propósito de
+          facilitar su uso generalmente con el apoyo de tablas, medidas numéricas
+          o gráficas.<br>
+          Un parámetro es un número que se obtiene gracias a una distribución de
+          datos estadísticos y ayuda a organizar la información dada ya sea por
+          una gráfica o una tabla.
+          <br><br>
+          Los principales tipos son:
+          <br>
+          <b>1.- Centralización.</b>
+          <br>
+          <b>2.- Posición.</b>
+          <br>
+          <b>3.- Dispersión.</b>
+          <br>
+        </p>
+      </div>
+
+      <div class="col-md-4 text-center animated fadeIn" id="second-one">
+        <h3><b>¿Por qué es importante?</b></h3>
+        <h3><i>Aplicaciones clásicas de estadística</i></h3>
+        <p>
+          <ul class="list-group">
+            <li class="list-group-item">Censo</li>
+            <li class="list-group-item">Estudios de Empresas</li>
+            <li class="list-group-item">Medicina</li>
+            <li class="list-group-item">Comportamientos y fenómenos</li>
+            <li class="list-group-item">Análisis de mercado</li>
+            <li class="list-group-item">Investigación</li>
+            <li class="list-group-item"><b><span class="badge">Fenómenos interesantes</span></b></li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-4 text-left animated fadeIn" id="third-one">
+        <div class="text-right">
+          <h3><b>Ahora, lo divertido</b></h3>
+          <h3><i>Entendamos la estadística</i></h3>
+        </div>
+        <p>
+          El uso de la estadística nos lleva a infinitas posibilidades. Hoy
+          estudiaremos las tendencias y los gustos musicales de jóvenes que
+          utilizan la aplicación <b>Spotify.</b><br><br>
+          Spotify es la aplicación de música más grande del mercado, en ella podemos
+          escuchar en tiempo real <i>playlists</i> de <i>artistas</i> y <i>géneros</i>
+          que nosotros queramos sin necesidad de pagar por escuchar nuestras canciones
+          preferidas, aunque claro, <b>la aplicación tiene sus limitancias.</b> Pero
+          para efectos de nuestra actividad, eso no tiene mayor reelevancia.<br><br>
+          <b>Sin mayor preámbulo comencemos.</b>
+        </p>
+      </div>
+      <div class="col-md-2 col-md-offset-5 button-desp" id="fourth-one">
+        <button type="button" name="button" class="btn">
+          <i class="fa fa-4x fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-12 dato">
+        <div class="col-md-4 text-left animated flipInX" id="first-second">
+          <h3><b>Dato</b></h3>
+          <p>
+            Un dato es una representación simbólica (numérica, alfabética,
+            algorítmica, espacial, etc.) de un atributo o variable cuantitativa
+            o cualitativa. Los datos describen hechos empíricos, sucesos y
+            entidades. <br><br>
+            Los datos aisladamente pueden no contener información humanamente
+            relevante. Sólo cuando un conjunto de datos se examina conjuntamente
+            a la luz de un enfoque, hipótesis o teoría se puede apreciar la
+            información contenida en dichos datos. Los datos pueden consistir
+            en números, estadísticas o proposiciones descriptivas. Los datos
+            convenientemente agrupados, estructurados e interpretados se
+            consideran que son la base de la información humanamente relevante
+            que se pueden utilizar en la toma de decisiones, la reducción de la
+            incertidumbre o la realización de cálculos.
+          </p>
+        </div>
+        <div class="col-md-4 animated flipInX" id="second-second">
+          <h3><b>Categorías Spotify</b></h3>
+          <p>
+              <% @categories.each do |c| %>
+                <span class="label label-danger label-opt"><%=c.name%></span> <span class="label label-warning label-opt"> Total Playlists: <%=c.playlists.count%></span><br><br>
+              <% end %>
+          </p>
+        </div>
+        <div class="col-md-4 animated flipInX" id="third-second">
+          <h3><b>Veamos el gráfico</b></h3>
+
+          <div id="container" style="width:33%; height:400px;"></div>
+          <script>
+            $(function () {
+                var myChart = Highcharts.chart('container', {
+                    chart: {
+                        type: 'bar'
+                    },
+                    title: {
+                        text: 'Categorías'
+                    },
+                    xAxis: {
+                        categories: <%= raw @categories_names%>
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Playlists'
+                        }
+                    },
+                    series: [{
+                        name: 'Cantidad de Playlists',
+                        data: <%= @categories_playlist %>
+                    }]
+                });
+            });
+          </script>
+        </div>
+        </div>
+        <div class="col-md-2 col-md-offset-5 button-desp" id="fourth-second">
+          <button type="button" name="button" class="btn">
+            <i class="fa fa-4x fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-12 text-center">
+          <div class="col-md-4 animated slideInUp" id="first-third">
+            <h3><b>Tabla</b></h3>
+            <p>
+              Los datos pueden ser representados de diversas formas, la forma
+              más usada es a través de una tabla de valores:
+
+              <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th>
+                      Categoría
+                    </th>
+                    <th>
+                      Cantidad de playlists
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <% @categories.each do |category| %>
+                  <tr>
+                    <td>
+                        <%= category.name %>
+                    </td>
+                    <td>
+                        <%= category.playlists.count %>
+                    </td>
+                  </tr>
+                  <% end %>
+                </tbody>
+
+              </table>
+            </p>
+          </div>
+          <div class="col-md-4 animated slideInUp" id="second-third">
+            <h3><b>Moda</b></h3>
+            <div class="text-left">
+              <p>
+                La moda es el término que más se repite, el decir, el término con
+                mayor <i><b>frecuencia absoluta</b></i>. Ésta no necesariamente es única.<br>
+              </p>
+                <ul>
+                  <li>Cuando es un término con la mayor frecuencia absoluta se
+                    dice que el volumen de datos es <b>Unimodal</b>.
+                  </li><br>
+                  <li>Cuando son dos términos con la mayor frecuencia absoluta se
+                    dice que el volumen de datos es <b>Bimodal</b>.
+                  </li><br>
+                  <li>Cuando existen más de 2 términos con la mayor frecuencia
+                     absoluta se dice que el volumen de datos es <b>Multimodal</b>.
+                  </li>
+                </ul>
+                <br>
+              </div>
+              <div class="text-center">
+                <p>
+                  En este caso nuestras <b>Modas</b> son:
+                </p>
+                <h6><span class="label label-warning">Estado de ánimo</span></h6>
+                <h6><span class="label label-warning">Rock</span></h6>
+                <h6><span class="label label-warning">Indie/Alternativa</span></h6>
+                <h6><span class="label label-warning">Dance</span></h6>
+                <h6><span class="label label-warning">Chill</span></h6>
+                <p>
+                  Por lo que consideramos nuestro ejemplo como <b>Multimodal</b>.
+                </p>
+              </div>
+          </div>
+          <div class="col-md-4 animated slideInUp" id="third-third">
+            <h3><b>No siempre el <span class="label label-warning">Pop</span></b></h3>
+            <h3><b>Es lo más popular.</b></h3>
+
+            <img src="http://m.gifanimados.com/Gifs-Arte/Animaciones-Musica/Artistas-Musicales/Cantantes/Michael-Jackson/Michael-Jackson-Bailando-68666.gif"/>
+            <br><br>
+            <h2><b>Lo sentimos <span class="label label-danger">Michael</span></b>
+            <i class="em em-worried"></i>
+            </h2>
+          </div>
+        </div>
+        <div class="col-md-2 col-md-offset-5 button-desp" id="fourth-third">
+          <button type="button" name="button" class="btn">
+            <i class="fa fa-4x fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-4 animated zoomIn" id="first-fourth">
+            <h3><b>Media Aritmética</b></h3>
+            <p>
+              En matemáticas y estadística, la media aritmética (también llamada
+              promedio o simplemente media) de un conjunto finito de números es
+              el valor característico de una serie de datos cuantitativos, objeto
+              de estudio que parte del principio de la esperanza matemática o
+              valor esperado, se obtiene a partir de la suma de todos sus valores
+              dividida entre el número de sumandos. Cuando el conjunto es una
+              muestra aleatoria recibe el nombre de media muestral siendo uno
+              de los principales estadísticos muestrales.
+              <br>
+              <br>
+              Dados los n números, la <b>media aritmética</b> se define como:
+              <br>
+              <br>
+              <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <mrow class="MJX-TeXAtom-ORD">
+                  <mover>
+                    <mi>X</mi>
+                    <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+                  </mover>
+                </mrow>
+                <mo>=</mo>
+                <mfrac>
+                  <mrow>
+                    <msub>
+                      <mi>x</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>1</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>x</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>2</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>x</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mn>3</mn>
+                      </mrow>
+                    </msub>
+                    <mo>+</mo>
+                    <mo>.</mo>
+                    <mo>.</mo>
+                    <mo>.</mo>
+                    <mo>+</mo>
+                    <msub>
+                      <mi>x</mi>
+                      <mrow class="MJX-TeXAtom-ORD">
+                        <mi>n</mi>
+                      </mrow>
+                    </msub>
+                  </mrow>
+                  <mi>n</mi>
+                </mfrac>
+              </math>
+              Para el estudio de la media aritmética utilizaremos los datos de un artista
+              popular entre jóvenes. En este caso en particular elegiremos a:
+              <br>
+              <br>
+              <% @artists.each do |artist| %>
+                <h1>
+                  <a href="https://www.youtube.com/watch?v=yiQ7S38nKog"><span class="label label-danger"><%= artist.name %></span></a>
+                </h1>
+              <% end %>
+              <br>
+            </p>
+          </div>
+          <div class="col-md-4 animated zoomIn" id="second-fourth">
+            <h3><b>Recopilando nuestros datos</b></h3>
+            <p>
+              De nuestra artista elegiremos las <b>10 canciones más populares</b>:
+            </p>
+              <% @tracks.each do |track| %>
+                <h4>
+                <span class="label label-danger"><%= track.name %></span>
+                <span class="label label-warning">Popularidad: <%= track.popularity %></span>
+                </h4>
+              <% end %>
+              <br>
+              <br>
+              <p>
+                Cabe destacar que en Spotify, el índice de popularidad va del <b>0 al 100</b>
+                donde 100 es lo más popular y 0 nada popular. Por lo que, <b>Ana Tijoux</b>
+                como artista contemporánea, entrega datos bastante positivos para nuestro
+                estudio.
+              </p>
+          </div>
+          <div class="col-md-4 animated zoomIn" id="third-fourth">
+            <h3><b>Calculando el Promedio</b></h3>
+            <p>
+              En base a la ecuación anterior, la <b>solución</b> está dada por:
+            </p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>X</mi>
+                  <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>48</mn>
+                  <mo>+</mo>
+                  <mn>46</mn>
+                  <mo>+</mo>
+                  <mn>44</mn>
+                  <mo>+</mo>
+                  <mn>44</mn>
+                  <mo>+</mo>
+                  <mn>43</mn>
+                  <mo>+</mo>
+                  <mn>42</mn>
+                  <mo>+</mo>
+                  <mn>40</mn>
+                  <mo>+</mo>
+                  <mn>40</mn>
+                  <mo>+</mo>
+                  <mn>39</mn>
+                  <mo>+</mo>
+                  <mn>39</mn>
+                </mrow>
+                <mn>10</mn>
+              </mfrac>
+            </math>
+            <br>
+            <p>
+              Lo que nos entrega el siguiente <b>resultado:</b>
+              <br>
+            </p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>X</mi>
+                  <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mo>=</mo>
+              <mn>42</mn>
+              <mo>,</mo>
+              <mn>5</mn>
+            </math>
+
+            <div id="container2" style="width:33%; height:280px;"></div>
+            <script>
+              $(function () {
+                  var myChart = Highcharts.chart('container2', {
+                      chart: {
+                          type: 'bar'
+                      },
+                      title: {
+                          text: 'Tracks populares'
+                      },
+                      xAxis: {
+                          categories: <%= raw @tracks_names%>
+                      },
+                      yAxis: {
+                          title: {
+                              text: 'Playlists'
+                          }
+                      },
+                      series: [{
+                          name: 'Cantidad de Playlists',
+                          data: <%= @tracks_popularity %>
+                      }]
+                  });
+              });
+            </script>
+          </div>
+        </div>
+        <div class="col-md-2 col-md-offset-5 button-desp" id="fourth-fourth">
+          <button type="button" name="button" class="btn">
+            <i class="fa fa-4x fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-4 animated rollIn" id="first-fifth">
+            <h3><b>Mediana</b></h3>
+            <p>
+              La mediana representa el valor de la variable de posición central
+              en un conjunto de <b>datos ordenados.</b>
+              <br>
+              <br>
+              Sean <b><i>n</i></b> los datos de una muestra ordenada en orden
+              creciente y designando la mediana como Me, distinguimos dos casos:
+              <br>
+              <br>
+            </p>
+            <ul>
+              <li>
+                Si n es impar, la mediana es el valor que ocupa la posición
+                <b>(n+1)/2</b> una vez que los datos han sido ordenados
+                (en orden creciente o decreciente), porque éste es el valor
+                central.
+              </li>
+              <br>
+              <li>
+                Si n es par, la mediana es la media aritmética de los dos
+                valores centrales. Cuando n {\displaystyle n} n es par, los
+                dos datos que están en el centro de la muestra ocupan las
+                posiciones <b>n/2</b> y <b>n/2+1</b>.
+              </li>
+            </ul>
+            <br>
+            <p>
+              Continuando con el caso anterior, ordenaremos únicamente la popularidad
+              de las canciones en orden decreciente.
+              <br>
+              <br>
+              Los resultados serán mostrados en la tabla a continuación:
+            </p>
+          </div>
+          <div class="col-md-4 animated rollIn" id="second-fifth">
+            <h3><b>Datos ordenados de popularidad</b></h3>
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;
+                    Popularidad Canciones
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <% @tracks.each do |track| %>
+                <tr>
+                  <td>
+                    <span class="badge"><%= track.popularity %></span>
+                  </td>
+                </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4 animated rollIn" id="third-fifth">
+            <h3><b>Calculando la mediana</b></h3>
+            <p>
+              Como la cantidad de datos a estudiar es un número <b>par</b> debemos
+              utilizar el promedio de los dos datos centrales de nuestro arreglo de
+              números ordenados:
+            </p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>X</mi>
+                  <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mo>=</mo>
+              <mfrac>
+                <mrow>
+                  <mn>43</mn>
+                  <mo>+</mo>
+                  <mn>42</mn>
+                </mrow>
+                <mn>2</mn>
+              </mfrac>
+            </math>
+            <p>
+              En donde el resultado final es:
+            </p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+              <mrow class="MJX-TeXAtom-ORD">
+                <mover>
+                  <mi>X</mi>
+                  <mo stretchy="false">&#x00AF;<!-- ¯ --></mo>
+                </mover>
+              </mrow>
+              <mo>=</mo>
+              <mn>42</mn>
+              <mo>,</mo>
+              <mn>5</mn>
+            </math>
+            <p>
+              Curiosamente nuestro <b>promedio</b> y nuestra <b>mediana</b> coinciden
+              en sus valores numéricos. Esto explica que los datos son precisos, es decir,
+              la dispersión entre ellos es mínima.
+            </p>
+            <br>
+            <br>
+            <p>
+              Y bueno, no queda más que felicitar a nuestra artista
+            </p>
+            <h3><span class="label label-danger">Ana Tijoux</span></h3>
+            <p>
+              Por su creciente desempeño como artista nacional chilena.
+              <i class="em em-heart"></i>
+              <i class="em em-heart"></i>
+            </p>
+          </div>
+
+        </div>
+        <div class="col-md-2 col-md-offset-5 button-desp" id="fourth-fifth">
+          <button type="button" name="button" class="btn">
+            <i class="fa fa-4x fa-chevron-down" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-md-12 text-center final animated bounceIn" id="final-div">
+          <h1><b>Para finalizar: Ejemplos de gráficos</b></h1>
+          <div class="col-md-3">
+            <h3><b>Gráfico Vertical</b></h3>
+            <div id="container-column" style="width:25%; height:400px;"></div>
+            <script>
+              $(function () {
+                  var myChart = Highcharts.chart('container-column', {
+                      chart: {
+                          type: 'column'
+                      },
+                      title: {
+                          text: 'Tracks populares'
+                      },
+                      xAxis: {
+                          categories: <%= raw @tracks_names%>
+                      },
+                      yAxis: {
+                          title: {
+                              text: 'Playlists'
+                          }
+                      },
+                      series: [{
+                          name: 'Cantidad de Playlists',
+                          data: <%= @tracks_popularity %>
+                      }]
+                  });
+              });
+            </script>
+          </div>
+          <div class="col-md-3">
+            <h3><b>Gráfico Lineal</b></h3>
+            <div id="container-linear" style="width:25%; height:400px;"></div>
+            <script>
+              $(function () {
+                  var myChart = Highcharts.chart('container-linear', {
+                      chart: {
+                          type: 'line'
+                      },
+                      title: {
+                          text: 'Tracks populares'
+                      },
+                      xAxis: {
+                          categories: <%= raw @tracks_names%>
+                      },
+                      yAxis: {
+                          title: {
+                              text: 'Playlists'
+                          }
+                      },
+                      series: [{
+                          name: 'Cantidad de Playlists',
+                          data: <%= @tracks_popularity %>
+                      }]
+                  });
+              });
+            </script>
+          </div>
+          <div class="col-md-3">
+            <h3><b>Gráfico Circular</b></h3>
+            <div id="container-circular" style="width:25%; height:400px;"></div>
+            <script>
+              $(function () {
+                  var myChart = Highcharts.chart('container-circular', {
+                      chart: {
+                        plotBackgroundColor: null,
+                        plotBorderWidth: null,
+                        plotShadow: false,
+                        type: 'pie'
+                      },
+                      title: {
+                          text: 'Tracks populares'
+                      },
+                      xAxis: {
+                          categories: <%= raw @tracks_names%>
+                      },
+                      yAxis: {
+                          title: {
+                              text: 'Playlists'
+                          }
+                      },
+                      series: [{
+                          name: 'Cantidad de Playlists',
+                          data: <%= @tracks_popularity %>
+                      }]
+                  });
+              });
+            </script>
+          </div>
+          <div class="col-md-3">
+            <h3><b>Gráfico de área</b></h3>
+            <div id="container-area" style="width:25%; height:400px;"></div>
+            <script>
+              $(function () {
+                  var myChart = Highcharts.chart('container-area', {
+                      chart: {
+                        type: 'area'
+                      },
+                      title: {
+                          text: 'Tracks populares'
+                      },
+                      xAxis: {
+                          categories: <%= raw @tracks_names%>
+                      },
+                      yAxis: {
+                          title: {
+                              text: 'Playlists'
+                          }
+                      },
+                      series: [{
+                          name: 'Cantidad de Playlists',
+                          data: <%= @tracks_popularity %>
+                      }]
+                  });
+              });
+            </script>
+          </div>
+        </div>
+        <div class="col-md-12">
+          <div class="col-md-12 end"></div>
+          <div class="col-md-3 text-left">
+            <p class="signature">
+              Idea original por:
+              <br>
+              <i>Gladys Zorrilla Castillo</i>
+              <br>
+              <i>Magister en Educación</i>
+              <br>
+              <a href="mailto:gzorrilla68@yahoo.es">gzorrilla68@yahoo.es</a>
+            </p>
+          </div>
+          <div class="col-md-3 text-left">
+            <p>
+              <i>Proyecto desarrollado para blog matemática educativa interactiva.</i>
+            </p>
+          </div>
+          <div class="col-md-2">
+            <p>
+              Patrocinan:
+            </p>
+          </div>
+          <div class="col-md-4">
+            <img src="http://datos.gob.cl/uploads/group/2015-12-01-183520.933553Logo-01.jpg" style="width:30%; padding-right: 30px;"/>
+            <img src="http://www.vitacura.cl/resources/images/web/educacion/insignia_antartica.gif" style="width:26%; padding-right: 30px;"/>
+            <img src="https://d0.awsstatic.com/logos/customers/spotify-logo-primary-horizontal-light-background-rgb.jpg" style="width:30%;" />
+          </div>
+        </div>
+    </div>
+    <script>
+
+        (function($) {
+            $.fn.goTo = function() {
+                $('html, body').animate({
+                    scrollTop: $(this).offset().top + 'px'
+                }, 'slow');
+                return this; // for chaining...
+            }
+        })(jQuery);
+
+        $("#second-one").hide();
+        $("#third-one").hide();
+        $("#fourth-one").hide();
+
+        $("#first-second").hide();
+        $("#second-second").hide();
+        $("#third-second").hide();
+        $("#fourth-second").hide();
+
+        $("#first-third").hide();
+        $("#second-third").hide();
+        $("#third-third").hide();
+        $("#fourth-third").hide();
+
+        $("#first-fourth").hide();
+        $("#second-fourth").hide();
+        $("#third-fourth").hide();
+        $("#fourth-fourth").hide();
+
+        $("#first-fifth").hide();
+        $("#second-fifth").hide();
+        $("#third-fifth").hide();
+        $("#fourth-fifth").hide();
+
+        $("#final-div").hide();
+
+      $("#first-one").click(function(){
+        $("#second-one").show();
+      });
+      $("#second-one").click(function(){
+        $("#third-one").show();
+        $("#fourth-one").show();
+      });
+      $("#fourth-one").click(function(){
+        $("#first-second").show();
+        $('#first-second').goTo();
+      });
+
+      $("#first-second").click(function(){
+        $("#second-second").show();
+      });
+      $("#second-second").click(function(){
+        $("#third-second").show();
+        $("#fourth-second").show();
+      });
+      $("#fourth-second").click(function(){
+        $("#first-third").show();
+        $('#first-third').goTo();
+      });
+
+      $("#first-third").click(function(){
+        $("#second-third").show();
+      });
+      $("#second-third").click(function(){
+        $("#third-third").show();
+        $("#fourth-third").show();
+      });
+      $("#fourth-third").click(function(){
+        $("#first-fourth").show();
+        $('#first-fourth').goTo();
+      });
+
+      $("#first-fourth").click(function(){
+        $("#second-fourth").show();
+      });
+      $("#second-fourth").click(function(){
+        $("#third-fourth").show();
+        $("#fourth-fourth").show();
+      });
+      $("#fourth-fourth").click(function(){
+        $("#first-fifth").show();
+        $('#first-fifth').goTo();
+      });
+
+      $("#first-fifth").click(function(){
+        $("#second-fifth").show();
+      });
+      $("#second-fifth").click(function(){
+        $("#third-fifth").show();
+        $("#fourth-fifth").show();
+      });
+      $("#fourth-fifth").click(function(){
+        $("#final-div").show();
+        $('#final-div').goTo();
+      });
+    </script>
+  </body>
+</html>

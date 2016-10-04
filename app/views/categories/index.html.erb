@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<p id="notice"><%= notice %></p>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="aplication.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/2fd20525fe.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="col-md-12 text-center tittle">
+      <h1><b>EstadistiFy</b></h1>
+      <h4>Aprende Estadística descriptiva utilizando datos entregados por spotify</h4>
+    </div>
+    <div class="col-md-12 text-center">
+      <div class="col-md-4 text-left">
+        <h3><b>Partamos por lo básico</b></h3>
+        <h3><i>¿Qué es la Estadística descritiva?</i></h3>
+        <p>
+          La <b>estadística descriptiva</b> es la técnica matemática que obtiene,
+          organiza, presenta y describe un conjunto de datos con el propósito de
+          facilitar su uso generalmente con el apoyo de tablas, medidas numéricas
+          o gráficas.<br>
+          Un parámetro es un número que se obtiene gracias a una distribución de
+          datos estadísticos y ayuda a organizar la información dada ya sea por
+          una gráfica o una tabla.
+          <br><br>
+          Los principales tipos son:
+          <br>
+          <b>1.- Centralización.</b>
+          <br>
+          <b>2.- Posición.</b>
+          <br>
+          <b>3.- Dispersión.</b>
+          <br>
+        </p>
+      </div>
+
+      <div class="col-md-4 text-center">
+        <h3><b>¿Por qué es importante?</b></h3>
+        <h3><i>Aplicaciones clásicas de estadística</i></h3>
+        <p>
+          <ul class="list-group">
+            <li class="list-group-item">Censo</li>
+            <li class="list-group-item">Estudios de Empresas</li>
+            <li class="list-group-item">Medicina</li>
+            <li class="list-group-item">Comportamientos y fenómenos</li>
+            <li class="list-group-item">Análisis de mercado</li>
+            <li class="list-group-item">Investigación</li>
+            <li class="list-group-item"><b><span class="badge">Fenómenos interesantes</span></b></li>
+          </ul>
+        </p>
+      </div>
+      <div class="col-md-4 text-left">
+        <div class="text-right">
+          <h3><b>Ahora, lo divertido</b></h3>
+          <h3><i>Entendamos la estadística</i></h3>
+        </div>
+        <p>
+          El uso de la estadística nos lleva a infinitas posibilidades. Hoy
+          estudiaremos las tendencias y los gustos musicales de jóvenes que
+          utilizan la aplicación <b>Spotify.</b><br><br>
+          Spotify es la aplicación de música más grande del mercado, en ella podemos
+          escuchar en tiempo real <i>playlists</i> de <i>artistas</i> y <i>géneros</i>
+          que nosotros queramos sin necesidad de pagar por escuchar nuestras canciones
+          preferidas, aunque claro, <b>la aplicación tiene sus limitancias.</b> Pero
+          para efectos de nuestra actividad, eso no tiene mayor reelevancia.<br><br>
+          <b>Sin mayor preámbulo comencemos.</b>
+        </p>
+      </div>
+      <div class="col-md-2 col-md-offset-5">
+        <button type="button" name="button" class="btn">
+          <i class="fa fa-4x fa-chevron-down" aria-hidden="true"></i>
+        </button>
+      </div>
+      <div class="col-md-12">
+        <div class="col-md-4 text-left">
+          <h3><b>Dato</b></h3>
+          <p>
+            Un dato es una representación simbólica (numérica, alfabética,
+            algorítmica, espacial, etc.) de un atributo o variable cuantitativa
+            o cualitativa. Los datos describen hechos empíricos, sucesos y
+            entidades. <br><br>
+            Los datos aisladamente pueden no contener información humanamente
+            relevante. Sólo cuando un conjunto de datos se examina conjuntamente
+            a la luz de un enfoque, hipótesis o teoría se puede apreciar la
+            información contenida en dichos datos. Los datos pueden consistir
+            en números, estadísticas o proposiciones descriptivas. Los datos
+            convenientemente agrupados, estructurados e interpretados se
+            consideran que son la base de la información humanamente relevante
+            que se pueden utilizar en la toma de decisiones, la reducción de la
+            incertidumbre o la realización de cálculos.
+          </p>
+        </div>
+        <div class="col-md-4" id="badges">
+          <% @categories.each do |c| %>
+          <span class="badge"><%=c.name%></span>
+          <% end %>
+        </div>
+        <div class="col-md-4">
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
