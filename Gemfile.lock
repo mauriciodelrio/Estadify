@@ -61,6 +61,8 @@ GEM
     globalid (0.3.7)
       activesupport (>= 4.1.0)
     hashie (3.4.6)
+    highcharts-rails (4.2.5)
+      railties (>= 3.1)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
     i18n (0.7.0)
@@ -183,6 +185,7 @@ DEPENDENCIES
   byebug
   chartjs-ror
   coffee-rails (~> 4.1.0)
+  highcharts-rails
   jbuilder (~> 2.0)
   jquery-rails
   pg
