@@ -34,22 +34,22 @@
         <h3><b>Partamos por lo básico</b></h3>
         <h3><i>¿Qué es la Estadística descritiva?</i></h3>
         <p>
-          La <b>estadística descriptiva</b> es la técnica matemática que obtiene,
-          organiza, presenta y describe un conjunto de datos con el propósito de
-          facilitar su uso generalmente con el apoyo de tablas, medidas numéricas
-          o gráficas.<br>
-          Un parámetro es un número que se obtiene gracias a una distribución de
-          datos estadísticos y ayuda a organizar la información dada ya sea por
-          una gráfica o una tabla.
+          La <b>estadística descriptiva</b> es la ciencia que permite,
+          organizar, presentar y tabular un conjunto de datos con el propósito de
+          analizar un problema mediante tablas de distribución,
+          gráficos y estadígrafos.<br>
+          Un <b>Estadígrafo</b> será básicamente las distintas medidas descriptivas que
+          pueden extraerse de una muestra específica, a fin de ser usado como una
+          estimación sobre un parámetro.
           <br><br>
           Los principales tipos son:
           <br>
           <b>1.- Centralización.</b>
-          <br>
+          <br><br>
           <b>2.- Posición.</b>
-          <br>
+          <br><br>
           <b>3.- Dispersión.</b>
-          <br>
+          <br><br>
         </p>
       </div>
 
@@ -80,10 +80,9 @@
           Spotify es la aplicación de música más grande del mercado, en ella podemos
           escuchar en tiempo real <i>playlists</i> de <i>artistas</i> y <i>géneros</i>
           que nosotros queramos sin necesidad de pagar por escuchar nuestras canciones
-          preferidas, aunque claro, <b>la aplicación tiene sus limitancias.</b> Pero
-          para efectos de nuestra actividad, eso no tiene mayor reelevancia.<br><br>
-          <b>Sin mayor preámbulo comencemos.</b>
+          preferidas.
         </p>
+        <img src="https://67.media.tumblr.com/b8b4b9d3db239e65748341ffa243d5b0/tumblr_n2380gCzDE1see97bo1_500.gif" style="width:50%" />
       </div>
       <div class="col-md-2 col-md-offset-5 button-desp" id="fourth-one">
         <button type="button" name="button" class="btn">
@@ -92,22 +91,32 @@
       </div>
       <div class="col-md-12 dato">
         <div class="col-md-4 text-left animated flipInX" id="first-second">
-          <h3><b>Dato</b></h3>
+          <h3><b>Población, muestra y variable</b></h3>
           <p>
-            Un dato es una representación simbólica (numérica, alfabética,
-            algorítmica, espacial, etc.) de un atributo o variable cuantitativa
-            o cualitativa. Los datos describen hechos empíricos, sucesos y
-            entidades. <br><br>
-            Los datos aisladamente pueden no contener información humanamente
-            relevante. Sólo cuando un conjunto de datos se examina conjuntamente
-            a la luz de un enfoque, hipótesis o teoría se puede apreciar la
-            información contenida en dichos datos. Los datos pueden consistir
-            en números, estadísticas o proposiciones descriptivas. Los datos
-            convenientemente agrupados, estructurados e interpretados se
-            consideran que son la base de la información humanamente relevante
-            que se pueden utilizar en la toma de decisiones, la reducción de la
-            incertidumbre o la realización de cálculos.
-          </p>
+            <b>Población:</b> Es un conjunto de personas, eventos o cosas de las cuales
+            se desea hacer un estudio, y tienen una característica en común.
+            <br><br>
+            <b>Muestra:</b> Es un subconjunto cualquiera de la población; es importante
+            escoger la muestra en forma aleatoria (al azar), pues así se logra
+            que sea representativa y se puedan obtener conclusiones más a fines
+            acerca de las características de la población.
+            <br><br>
+            <b>Variable:</b> Las variables pueden clasificarse como:
+            <br>
+            </p>
+            <ul>
+              <li><b>Cualitativas: </b>Relacionadas con características no
+                 numéricas de un individuo. A su vez las variables cualitativas se
+                 clasifican en <b>ordinales</b> o <b>nominales</b>.
+               </li><br>
+              <li><b>Cuantitativas:</b>Relacionadas con características numéricas
+                 del individuo. A su vez las variables cuantitativas se clasifican en <b>discretas
+                 </b> o <b>continuas.</b></li>
+            </ul>
+            <p>
+              Para entender lo anteriormente señalado, trabajaremos con el conjunto
+              de las 10 categorías más populares <b>creadas por Spotify.</b>
+            </p>
         </div>
         <div class="col-md-4 animated flipInX" id="second-second">
           <h3><b>Categorías Spotify</b></h3>
@@ -116,6 +125,7 @@
                 <span class="label label-danger label-opt"><%=c.name%></span> <span class="label label-warning label-opt"> Total Playlists: <%=c.playlists.count%></span><br><br>
               <% end %>
           </p>
+          <img src="http://cdn.playbuzz.com/cdn/ec3539c2-79cb-49e6-8fb9-93373d1665c4/e7c04468-b600-49c5-b406-2cce820e1830.gif" style="width:40%" />
         </div>
         <div class="col-md-4 animated flipInX" id="third-second">
           <h3><b>Veamos el gráfico</b></h3>
@@ -157,7 +167,7 @@
             <h3><b>Tabla</b></h3>
             <p>
               Los datos pueden ser representados de diversas formas, la forma
-              más usada es a través de una tabla de valores:
+              más usada es a través de una tabla de distribución de frecuencia:
 
               <table class="table table-hover">
                 <thead>
@@ -240,14 +250,12 @@
           <div class="col-md-4 animated zoomIn" id="first-fourth">
             <h3><b>Media Aritmética</b></h3>
             <p>
-              En matemáticas y estadística, la media aritmética (también llamada
-              promedio o simplemente media) de un conjunto finito de números es
-              el valor característico de una serie de datos cuantitativos, objeto
-              de estudio que parte del principio de la esperanza matemática o
-              valor esperado, se obtiene a partir de la suma de todos sus valores
-              dividida entre el número de sumandos. Cuando el conjunto es una
-              muestra aleatoria recibe el nombre de media muestral siendo uno
-              de los principales estadísticos muestrales.
+              En estadística, la <b>media aritmética</b> o promedio de un conjunto
+              finito de datos es uno de los valores representativos de una distribución.
+              Su valor se obtiene a partir de la suma de todos sus datos
+              dividida entre el número de objetos de estudio de la muestra.
+              Cuando el conjunto es una muestra aleatoria recibe el nombre de
+              media muestral siendo uno de los principales estadísticos muestrales.
               <br>
               <br>
               Dados los n números, la <b>media aritmética</b> se define como:
@@ -427,7 +435,8 @@
               <br>
               <br>
               Sean <b><i>n</i></b> los datos de una muestra ordenada en orden
-              creciente y designando la mediana como Me, distinguimos dos casos:
+              creciente o decreciente y designando la mediana como Me,
+              distinguimos dos casos:
               <br>
               <br>
             </p>
@@ -441,9 +450,8 @@
               <br>
               <li>
                 Si n es par, la mediana es la media aritmética de los dos
-                valores centrales. Cuando n {\displaystyle n} n es par, los
-                dos datos que están en el centro de la muestra ocupan las
-                posiciones <b>n/2</b> y <b>n/2+1</b>.
+                valores centrales. Cuando n es par, los dos datos que están en
+                el centro de la muestra ocupan las posiciones <b>n/2</b> y <b>n/2+1</b>.
               </li>
             </ul>
             <br>
@@ -478,6 +486,7 @@
                 <% end %>
               </tbody>
             </table>
+
           </div>
           <div class="col-md-4 animated rollIn" id="third-fifth">
             <h3><b>Calculando la mediana</b></h3>
