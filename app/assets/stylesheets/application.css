@@ -87,6 +87,21 @@ ul, li{
   padding-bottom: 20vh;
 }
 
+i:link{
+
+  color: #f63737;
+}
+
+i:hover{
+
+  color: #f63737;
+}
+
+i:visited{
+
+  color: #f63737;
+}
+
 a:link{
 
   color: #f63737;
@@ -95,6 +110,7 @@ a:link{
 a:hover{
 
   color: #f63737;
+  background-color: white;
 }
 
 a:visited{
