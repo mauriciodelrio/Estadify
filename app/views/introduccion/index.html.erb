@@ -15,25 +15,23 @@
         </div>
         <div class="col-md-12 end"></div>
       </div>
-      <div class="col-md-12 top down text-center">
-        <div class="col-md-3">
-          <h3>Introducción</h3>
-          <%= link_to introduccion_index_path do %><i class="fa fa-5x fa-circle-o"></i> <% end %>
+      <div class="col-md-12">
+        <div class="col-md-4 text-center">
+          <h2>Introducción</h2>
+          <p>
+            En este curso abordaremos diversos elementos de estadística descriptiva,
+            a continuación un vídeo explicativo de los temas a tratar.
+          </p>
+          <div class="col-md-12 text-center top">
+            <h3>Volver al menú principal</h3>
+            <%= link_to main_index_path do %><i class="fa fa-5x fa-circle-o"></i> <% end %>
+          </div>
         </div>
-        <div class="col-md-3">
-          <h3>Contenido</h3>
-          <%= link_to homes_path do %><i class="fa fa-5x fa-circle-o"></i> <% end %>
-        </div>
-        <div class="col-md-3">
-          <h3>Ejemplos</h3>
-          <i class="fa fa-5x fa-circle-o" aria-hidden="true"></i>
-        </div>
-        <div class="col-md-3">
-          <h3>Evaluación</h3>
-          <i class="fa fa-5x fa-circle-o" aria-hidden="true"></i>
+        <div class="embed-container text-center top col-md-8">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/OPkGxnEXLsI" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
-      <div class="col-md-12 top-footer">
+      <div class="col-md-12 top">
         <div class="col-md-12 end"></div>
         <div class="col-md-3 text-left">
           <p class="signature">

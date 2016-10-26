@@ -64,3 +64,40 @@ ul, li{
   height: 8px;
   background-color: #f63737;
 }
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  width: 50%;
+  height: auto;
+  padding-top: 50%;
+  background: black;
+}
+
+.top{
+
+  padding-top: 7vh;
+}
+.top-footer{
+
+  padding-top: 20vh;
+}
+
+.down{
+  padding-bottom: 20vh;
+}
+
+a:link{
+
+  color: #f63737;
+}
+
+a:hover{
+
+  color: #f63737;
+}
+
+a:visited{
+
+  color: #f63737;
+}

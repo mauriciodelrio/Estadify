@@ -2,13 +2,16 @@ Rails.application.routes.draw do
   resources :homes do
     resources :categories
   end
+  resources :main
+  resources :introduccion
   get '/categories/:id', to:'categories#show', as: 'category'
-  post 'main/index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'homes#index'
+  get '/homes/index', to: 'homes#index', as: 'h'
+  get '/introduccion/index', to: 'index#introduccion', as: 'index'
+  root 'main#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
