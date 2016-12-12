@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require_tree .
 //= require Chart.min
+//= require countdown
 //= require highcharts
 // to get the new features in 2.3.0:
 //= require highcharts/highcharts-more

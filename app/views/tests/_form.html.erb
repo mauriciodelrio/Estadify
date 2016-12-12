@@ -1,0 +1,269 @@
+<%= form_for(@test) do |f| %>
+  <% if @test.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@test.errors.count, "error") %> prohibited this test from being saved:</h2>
+
+      <ul>
+      <% @test.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= label_tag '1. ¿Cuál de las siguientes es una variable cualitativa?' %>
+  <br>
+  <br>
+  <%= f.select(:question1) do %>
+  <%[
+      ['Escoja una opción', 0],
+      ['A. Número de comidas al día.', 1],
+      ['B. Deporte preferido.', 2],
+      ['C. Estatura de un niño.', 3],
+      ['D. Número de calzado.', 4]
+    ].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %>
+<br>
+<br>
+  <%= label_tag '2. A qué concepto hace referencia la definición: “Parte representativa de la población sobre la que se efectúa la medición de una variable”.' %>
+  <br>
+  <br>
+  <%= f.select(:question2) do %>
+  <%[
+      ['Escoja una opción', 0],
+      ['A. Variable cuantitativa.', 1],
+      ['B. Muestra.', 2],
+      ['C. Frecuencia absoluta.', 3],
+      ['D. Media aritmética.', 4]
+    ].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %>
+<br>
+<br>
+  <%= label_tag '3. ¿Cuál de las siguientes afirmaciones es falsa?' %>
+  <br>
+  <br>
+  <%= f.select(:question3) do %>
+  <%[
+      ['Escoja una opción', 0],
+      ['A. Una muestra está contenida en la población.', 1],
+      ['B. La masa (peso) de una persona es una variable cuantitativa.', 2],
+      ['C. El promedio es el dato que más se repite.', 3],
+      ['D. Para obtener la mediana de una muestra esta debe estar ordenada en forma creciente o decreciente.', 4]
+    ].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %>
+<br>
+<br>
+  <%= label_tag '4. Francisca tiene las siguientes notas en Historia son: 5,6 – 5,3 – 4,2 – 3,7 – 6,7 – 4,8 – 6,5, entonces el promedio de notas de Francisca es:' %>
+  <br>
+  <br>
+  <%= f.select(:question4) do %>
+  <%[
+      ['Escoja una opción', 0],
+      ['A. 5,3', 1],
+      ['B. 5,4', 2],
+      ['C. 5,5', 3],
+      ['D. 5,6', 4]
+    ].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %>
+<br>
+<br>
+  <%= label_tag '5. En un curso de pre-kinder con 12 alumnos se mide las estaturas (en cm) de estos niños, obteniendo lo siguiente:
+
+1,20 – 1,15 – 1,05 – 1,25 – 1,28 – 1,30 – 1,25 – 1,15 – 1,20 – 125 – 1,10 – 1,15
+
+
+Con estos dados la estatura que más se repite es:' %>
+  <br>
+  <br>
+  <%= f.select(:question5) do %>
+  <%[
+      ['Escoja una opción', 0],
+      ['A. 1,15 cm', 1],
+      ['B. 1,20 cm', 2],
+      ['C. 1,25 cm', 3],
+      ['D. 1,28 cm', 4]
+    ].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %>
+<br>
+<br>
+  <%= label_tag '6. En la escuela de Economía de la Universidad “Tu Futuro”, las notas se miden del 1 al 10. Si un curso de primer año tiene las siguientes notas:
+
+1 – 2 – 5 – 6 – 8 – 4 – 3 – 2 – 1 – 9 – 6 – 5 – 5 – 6 – 7 – 10 – 6 – 5 – 2 – 1 – 4 – 6 – 7 – 5
+
+¿Cuál es el valor central de la muestra o mediana?' %>
+  <br>
+  <br>
+  <%= f.select(:question6) do %>
+  <%[
+      ['Escoja una opción', 0],
+      ['A. 4', 1],
+      ['B. 5', 2],
+      ['C. 6', 3],
+      ['D. 7', 4]
+    ].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %>
+<br>
+<br>
+  <%= label_tag '7.  La siguiente tabla indica cómo se distribuyen las edades de los niños y adolescentes que asisten a clases de piano en el conservatorio:' %>
+  <br>
+  <div class="col-md-4 col-md-offset-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            Clase (edad)
+          </th>
+          <th>
+            Frecuencia
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2 - 6</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>6 - 10</td>
+          <td>4</td>
+        </tr>
+        <tr>
+          <td>10 - 14</td>
+          <td>11</td>
+        </tr>
+        <tr>
+          <td>14 - 18</td>
+          <td>14</td>
+        </tr>
+        <tr>
+          <td>18 - 22</td>
+          <td>6</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div class="col-md-12">
+    <%= f.select(:question7) do %>
+    <%[
+        ['Escoja una opción', 0],
+        ['A. 18,1 años', 1],
+        ['B. 15,4 años', 2],
+        ['C. 14,2 años', 3],
+        ['D. 12,6 años', 4]
+      ].each do |c| -%>
+        <%= content_tag(:option, c.first, value: c.last) %>
+      <% end %>
+    <% end %>
+    <br>
+    <br>
+  </div>
+<br>
+<br>
+  <%= label_tag '8. El grafico lineal entrega el número de llamadas locales de una compañía telefónica durante los primeros seis meses del año.' %>
+  <br>
+  <div class="col-md-10 text-center">
+    <%= image_tag("q8.png") %>
+  </div>
+  <br>
+  <br>
+  <%= label_tag 'I. Desde Febrero a Junio se hicieron 1400 llamadas' %>
+  <br>
+  <%= label_tag 'II. La distribución es bimodal' %>
+  <br>
+  <%= label_tag 'III. El promedio de llamadas durante esos 6 meses es de 300 llamadas' %>
+  <br>
+  <br>
+  <%= f.select(:question8) do %>
+  <%[
+      ['Escoja una opción', 0],
+      ['A. Sólo III', 1],
+      ['B. I y  II ', 2],
+      ['C. II y III ', 3],
+      ['D. I, II y  III', 4]
+    ].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %>
+<br>
+<br>
+  <%= label_tag '9. El promedio final de María, según lo que indica la tabla, es:' %>
+  <br>
+  <div class="col-md-3 col-md-offset-4">
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ponderación</td>
+          <td>20%</td>
+          <td>45%</td>
+          <td>35%</td>
+        </tr>
+        <tr>
+          <td>Notas</td>
+          <td>6,1</td>
+          <td>4,2</td>
+          <td>5,7</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br>
+  <div class="col-md-12">
+    <%= f.select(:question9) do %>
+    <%[
+        ['Escoja una opción', 0],
+        ['A.  5,1 aprox.', 1],
+        ['B.  5,0 aprox.', 2],
+        ['C.  5,2 aprox', 3],
+        ['D.  5,3 aprox', 4]
+      ].each do |c| -%>
+        <%= content_tag(:option, c.first, value: c.last) %>
+      <% end %>
+    <% end %>
+    <br>
+    <br>
+  </div>
+  <%= label_tag '10. Andrés visitó a los alumnos de un 8º básico.  Luego, registró el número de hermanos que tenía cada alumno para realizar un estudio:' %>
+  <br>
+  <div class="col-md-10 text-center">
+    <%= image_tag("q10.png") %>
+  </div>
+  <%= label_tag '¿Cuál es la cantidad de hermanos más frecuente en los alumnos del 8º?' %>
+  <br>
+  <br>
+  <%= f.select(:question1) do %>
+  <%[
+      ['Escoja una opción', 0],
+      ['A.  0 y 2', 1],
+      ['B.  1 y 2', 2],
+      ['C.  3 y 4', 3],
+      ['D.  4 y 5', 4]
+    ].each do |c| -%>
+      <%= content_tag(:option, c.first, value: c.last) %>
+    <% end %>
+  <% end %>
+  <br>
+  <br>
+  <div class="actions col-md-4 col-md-offset-4">
+    <%= f.submit 'Enviar test', :class => 'btn btn-success btn-block'%>
+  </div>
+<% end %>

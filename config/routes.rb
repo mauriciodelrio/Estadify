@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :examples
+  resources :tests
+  devise_for :users
   resources :homes do
     resources :categories
   end

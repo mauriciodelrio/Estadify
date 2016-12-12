@@ -4,6 +4,8 @@ gem 'rspotify', '1.18.0'
 gem 'chartjs-ror'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
+gem 'devise'
+gem 'countdown'
 group :production do
   gem 'pg'
 end

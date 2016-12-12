@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<div class="col-md-12">
+  <h1>Pruebas Respondidas</h1>
+    <br>
+    <br>
+    <div class="col-md-8 text-left col-md-offset-2">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Mail</th>
+          <th>Preguntas correctas</th>
+          <th colspan="4"></th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @tests.each do |test| %>
+          <% @users.each do |user| %>
+            <tr>
+              <% if user.id == test.user_id%>
+                <td><%= user.email%></td>
+              <% end %>
+              <td><%= test.good_answers%></td>
+              <td><%= link_to 'Show', test %></td>
+              <td><%= link_to 'Edit', edit_test_path(test) %></td>
+              <td><%= link_to 'Destroy', test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+              <td>Mail</td>
+            </tr>
+          <% end %>
+        <% end %>
+      </tbody>
+    </table>
+    <br>
+    <%= link_to 'New Test', new_test_path %>
+  </div>
+</div>
