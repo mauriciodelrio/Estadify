@@ -155,6 +155,8 @@ Con estos dados la estatura que más se repite es:' %>
   </div>
   <br>
   <div class="col-md-12">
+    <%= label_tag 'El promedio es:' %>
+    <br>
     <%= f.select(:question7) do %>
     <%[
         ['Escoja una opción', 0],
@@ -184,6 +186,8 @@ Con estos dados la estatura que más se repite es:' %>
   <br>
   <%= label_tag 'III. El promedio de llamadas durante esos 6 meses es de 300 llamadas' %>
   <br>
+  <br>
+  <%= label_tag '¿Cuál de las siguientes afirmaciones es/son correctas?' %>
   <br>
   <%= f.select(:question8) do %>
   <%[
